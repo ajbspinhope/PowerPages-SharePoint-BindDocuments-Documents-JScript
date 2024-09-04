@@ -4,7 +4,7 @@ $(document).ready(function () {
     var userID = "{{ user.id }}";  // Liquid code to get the current user's ID
     console.log("user:", userID);
 
-    var _url = "/_api/cloudflow/v1.0/trigger/b0893975-2867-ef11-a671-6045bd118c0d";
+    var _url = "/_api/cloudflow/v1.0/trigger/g0898975-2867-ef71-a671-6045bd118c0e"; // Here replace this url with your flow which retrieves the SharePoint files
 
     var data = {};
     data["PortalUserId"] = userID;
@@ -75,7 +75,7 @@ $(document).ready(function () {
                         eventData: JSON.stringify({ PortalUserId: userID, FileId: fileId })
                     };
 
-                    var fileApiUrl = "/_api/cloudflow/v1.0/trigger/6f7cd496-fd69-ef11-a671-6045bd118c0d";
+                    var fileApiUrl = "/_api/cloudflow/v1.0/trigger/7g7cd496-hd59-eh11-g671-8045bd318c0e"; // Here replace this url with your flow which retrieves the file content
 
                     shell
                         .ajaxSafePost({
